@@ -6,11 +6,11 @@ function iterativeLog(array) {
 
 function iterate(callback) {
   var array = [1, 2, 3];
-  array.forEach(element => callback);
+  array.forEach(element => callback(element));
   return array
   
 }
 
 function doToArray(array, callback) {
-  array.forEach(element => callback);
+  array.forEach(element => callback(element));
 }
